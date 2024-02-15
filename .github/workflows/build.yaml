@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - openapi
     paths-ignore:
       - website/**
       - coverage/**
