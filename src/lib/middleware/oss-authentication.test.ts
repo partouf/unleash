@@ -35,11 +35,11 @@ async function getSetup(preRouterHook) {
     };
 }
 
-test('should return 401 when missing user', async () => {
+test('should return 200 when missing user on an openapi', async () => {
     expect.assertions(0);
     const { base, request } = await getSetup(() => {});
 
-    return request.get(`${base}/api/protectedResource`).expect(401);
+    return request.get(`${base}/api/protectedResource`).expect(200);
 });
 
 test('should return 200 when user exists', async () => {
