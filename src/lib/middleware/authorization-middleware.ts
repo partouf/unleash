@@ -17,7 +17,7 @@ const authorizationMiddleware = (
             req.user = req.session.user;
             return next();
         }
-        if (req.user && req.user.username != 'unauthed-default-client') {
+        if (req.user && req.user.username !== 'unauthed-default-client') {
             return next();
         }
         if (req.header('authorization')) {
