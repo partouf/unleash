@@ -1,5 +1,5 @@
 {
-  "name": "unleash-server",
+  "name": "unleash-server-openapi",
   "description": "Unleash is an enterprise ready feature toggles service. It provides different strategies for handling feature toggles.",
   "version": "5.9.3",
   "keywords": [
@@ -21,7 +21,7 @@
     "url": "ssh://git@github.com:unleash/unleash.git"
   },
   "bugs": {
-    "url": "https://github.com/unleash/unleash/issues"
+    "url": "https://github.com/partouf/unleash/issues"
   },
   "types": "./dist/lib/server-impl.d.ts",
   "engines": {
