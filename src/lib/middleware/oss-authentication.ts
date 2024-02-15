@@ -27,6 +27,7 @@ function ossAuthHook(
         `${baseUriPath}/api/admin`,
         authorizationMiddleware(getLogger, baseUriPath),
     );
+
     app.use(
         `${baseUriPath}/logout`,
         authorizationMiddleware(getLogger, baseUriPath),
