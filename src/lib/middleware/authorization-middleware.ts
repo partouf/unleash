@@ -13,7 +13,7 @@ const authorizationMiddleware = (
     logger.debug('Enabling Authorization middleware');
 
     return async (req: IAuthRequest, res: Response, next: NextFunction) => {
-        if (req.session?.user && req.session.user.username !== 'unauthed-default-client') {
+        if (req.session?.user && req.session?.user.username !== 'unauthed-default-client') {
             req.user = req.session.user;
             return next();
         }
